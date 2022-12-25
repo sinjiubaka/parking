@@ -18,8 +18,6 @@
         <a href="rhome.html">ABOUT</a>
         <a href="registration.html">REGISTRATION</a>
          <a href="reservation.html">RESERVATION</a>
-        <a href="#map">MAP</a>
-      
         
     </nav>
 
@@ -129,32 +127,47 @@ header label{
                                     
                                     <form method="post" autocomplete="off" name="google-sheet">
                                         
-                                          <div class = "form-group">
-                                            <select name = "Day" id="Day" class="form-control" >
-                                <option value = "day-select">Select Day</option>
-                                <option value = "sunday">Sunday</option>
-                                <option value = "monday">Monday</option>
-                                <option value = "tuesday">Tuesday</option>
-                                <option value = "wednesday">Wednesday</option>
-                                <option value = "thursday">Thursday</option>
-                                <option value = "friday">Friday</option>
-                                <option value = "saturday">Saturday</option>
-                            </select>
+                                          <div class="form-group">
+                                            <input type="plate number" name="Plate_number" class="form-control" placeholder="Plate number " value="" required=""/>
                                         </div>
                                         
                                         
+                                                 <div class="form-group">
+                                            <input type="text" name="Car_model" class="form-control" placeholder="Car model " value="" required=""/>
+                                        </div>
+        
+                                         
                                         <div class="form-group">
-                                            <input type="text" name="Full name" class="form-control" placeholder="FullName " value="" required=""/>
-                                        </div>
-                                    
-                                    
-                                        <div class="form-group">
-                                            <input type="text" name="Age" class="form-control" placeholder="Age" value="" required=""/>
+                                            <input type="text" name="NAME" class="form-control" placeholder="NAME" value="" required=""/>
                                         </div>
                                         
-                                          <div class = "form-group">
+                                        
+                                             <div class="form-group">
+                                            <input type="number" name="PHONE_NUMBER" class="form-control" placeholder="PHONE NUMBER " value="" required=""/>
+                                        </div>
+                                                 <div class = "form-group">
+                                            <select name = "SEX" id="SEX" class="form-control">
+                                         <option value = "gender-select">Select Gender</option>
+                                         <option value = "Female">Female</option>
+                                         <option value = "Male">Male</option>
+                                              </select>
+                                         
+                                        </div>
+                                        
+                                    
+                                        <div class="form-group">
+                                            <input type="number" name="AGE" class="form-control" placeholder="AGE" value="" required=""/>
+                                        </div>  
+                                    
+                                        <div class="form-group">
+                                            <input type="date" name="DATE" class="form-control" placeholder="DATE" value="" required=""/>
+                                        </div>  
+                                    
+                                        
+                                         
+                                                <div class = "form-group">
                                 
-                                <select name = "Hour's" id="Hour's" class="form-control" > 
+                                <select name = "TIME" id="TIME" class="form-control" > 
                                 <option value = "hour-select">Select Hour</option>
                                 <option value = "10">14: 00</option>
                                 <option value = "10">16: 00</option>
@@ -164,18 +177,6 @@ header label{
                             </select>
                             
                               </div>
-                                            <div class = "form-group">
-                                            <select name = "Gender" id="Gender" class="form-control">
-                                         <option value = "gender-select">Select Gender</option>
-                                         <option value = "Female">Female</option>
-                                         <option value = "Male">Male</option>
-                                              </select>
-                                         
-                                        </div>
-                                              
-                                                 <div class="form-group">
-                                            <input type="text" name="Car model" class="form-control" placeholder="Car Model " value="" required=""/>
-                                        </div>
                                               
                                     <div class="form-group">
                                             <input type="submit" name="submit" class="btnSubmit btn-block" value="Reserved" />
@@ -190,7 +191,7 @@ header label{
         </div>
           
           <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwvwzjcr38AFxFHUVf7vK61cDq5WJHORWcTqHqejXeQTvoeaM1ZqIztJy4h3AIm-Bxb/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzzX6GaxeIWpXKYIxaEeTdDLP-aDaUefz14crIx7YGFhuXpobTo7MwNWIxNllG9-sZP/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
